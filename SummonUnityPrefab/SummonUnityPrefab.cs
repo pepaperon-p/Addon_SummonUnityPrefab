@@ -85,8 +85,11 @@ namespace RPGMaker.Codebase.Addon
         GameObject prefab = Resources.Load<GameObject>("Prefab/" + name);
         GameObject root = GameObject.Find("Root");
         GameObject obj = Instantiate(prefab, root.transform);
+        // 位置
         obj.transform.localPosition = new Vector3((float)x, -1 * (float)y, -5);
-        obj.transform.localRotation = Quaternion.identity;
+        // 回転
+        obj.transform.localRotation = Quaternion.Euler(0, 0, 0);
+        // サイズ
         obj.transform.localScale = new Vector3(1, 1, 1);
       }
     }
