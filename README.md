@@ -8,32 +8,22 @@
 プレハブはプロジェクトの以下の位置に配置してください。<br/>
 プロジェクト/Assets/Resources/Prefab
 
-```
-/*
- * @command LoadPrefab
- *      @text プレハブを召喚
- *      @desc 任意のプレハブを指定位置に召喚します。
- * 
- *  @arg name
- *      @text プレハブ名称
- *      @desc 召喚するプレハブ名を指定。<br>プロジェクト/Assets/Resources/Prefab/[name]
- *      @type string
- *
- *  @arg x
- *      @text 位置x
- *      @desc 基本はイベントと同じx値を設定（小数点で微調整できます）。
- *      @type number
- *      @max 9999
- *      @min -9999
- *      @decimals 2
- *
- *  @arg y
- *      @text 位置y
- *      @desc 基本はイベントと同じy値を設定（小数点で微調整できます）。
- *      @type number
- *      @max 9999
- *      @min -9999
- *      @decimals 2
- */
-public void LoadPrefab(string name, double x, double y)
-```
+
+| LoadPrefab | (string name, double x, double y) |
+|:-----------|:-----------|
+| name | プレハブ名称 |
+| x | 位置x |
+| y | 位置y |
+
+| LoadPrefabRotScale | (<br/>&nbsp;&nbsp;string name,<br/> &nbsp;&nbsp;double x, double y, double z,<br/> &nbsp;&nbsp;double xRot, double yRot, double zRot,<br/> &nbsp;&nbsp;double xScale, double yScale, double zScale<br/>) |
+|:-----------|:-----------|
+| name | プレハブ名称 |
+| x | 位置x |
+| y | 位置y |
+| z | 位置z |
+| xRot | 回転x |
+| yRot | 回転y |
+| zRot | 回転z |
+| xScale | サイズx |
+| yScale | サイズy |
+| zScale | サイズz |
